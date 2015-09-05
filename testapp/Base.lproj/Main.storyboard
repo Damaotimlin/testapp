@@ -31,7 +31,43 @@
                     <view key="view" contentMode="scaleToFill" id="5ft-AM-oMk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9X-SE-afw">
+                                <rect key="frame" x="156" y="262" width="289" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="289" id="1QY-25-SWz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Show me some progress">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showProgress" destination="8GE-g7-Myx" eventType="touchUpInside" id="N50-pQ-CyA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtT-wB-RUq">
+                                <rect key="frame" x="269" y="448" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="X3H-0J-Wob"/>
+                                </constraints>
+                                <state key="normal" title="stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopProgress" destination="8GE-g7-Myx" eventType="touchUpInside" id="6Rx-42-8sP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="w9X-SE-afw" firstAttribute="centerX" secondItem="5ft-AM-oMk" secondAttribute="centerX" id="BcS-tK-KkY"/>
+                            <constraint firstItem="mgT-Sx-Hbo" firstAttribute="top" secondItem="xtT-wB-RUq" secondAttribute="bottom" constant="122" id="BdO-dJ-yeI"/>
+                            <constraint firstItem="xtT-wB-RUq" firstAttribute="centerX" secondItem="w9X-SE-afw" secondAttribute="centerX" id="DcS-5I-c4Q"/>
+                            <constraint firstItem="w9X-SE-afw" firstAttribute="top" secondItem="1eQ-nP-CH7" secondAttribute="bottom" constant="198" id="I7Y-NC-lvG"/>
+                            <constraint firstItem="mgT-Sx-Hbo" firstAttribute="top" secondItem="w9X-SE-afw" secondAttribute="bottom" constant="263" id="JnC-e2-VaX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Xsa-pa-HpS"/>
                 </viewController>

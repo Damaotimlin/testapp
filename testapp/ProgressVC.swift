@@ -13,6 +13,7 @@ class ProgressVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.showProgress()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -21,6 +22,12 @@ class ProgressVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showProgress() {
+        SVProgressHUD.show()
+    }
 
+    @IBAction func stopProgress() {
+        SVProgressHUD.showSuccessWithStatus("yay it worked!")
+    }
 }
 
